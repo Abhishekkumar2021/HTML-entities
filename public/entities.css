@@ -5,6 +5,7 @@
 	padding: 10px;
 }
 .card {
+	border-top: 5px solid var(--dark-blue);
 	background: var(--white);
 	margin: 10px;
 	box-shadow: var(--shadow);
