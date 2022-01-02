@@ -17337,7 +17337,8 @@ app.get("/entities/all", (req, res) => {
 app.get("/entities/:id", (req, res) => {
 	const { id } = req.params;
 	const group = entities[id];
-	res.render("entity", { group, id });
+	if (group) res.render("entity", { group, id });
+	else res.render("error");
 });
 app.get("*", async (req, res) => {
 	res.render("error");
