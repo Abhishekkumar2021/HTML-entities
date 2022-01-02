@@ -1,1 +1,1 @@
-# All HTML-entities
+# All HTML entities
