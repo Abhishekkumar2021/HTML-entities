@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%= id.toUpperCase() %></title> </title>
+		<link rel="stylesheet" href="/common.css" type="text/css" />
+		<link rel="stylesheet" href="/entities.css" type="text/css" />
+	</head>
+	<body>
+		<div class="container">
+			<% for( let item of group ) { %>
+			<div class="card">
+				<div class="symbol center"><%= item.character %> </div>
+				<div class="name"> <span>Name </span><%= item.name %> </div>
+				<div class="unicode"><span>Unicode</span><%= item.unicode %> </div>
+				<div class="hex"> <span>Hex code</span><%= item.hex %> </div>
+				<div class="dec"> <span>Decimal code</span><%= item.dec %> </div
+				><div class="entity"><span> HTML entity</span> <%= item.entity %> </div
+				><div class="css"><span>CSS code</span> <%= item.css %> </div>
+			</div>
+			<% } %>
+			<a href="/entities">Home</a>
+		</div>
+	</body>
+</html>

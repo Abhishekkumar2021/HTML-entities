@@ -1,0 +1,28 @@
+.container {
+	background: url("not_found.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+}
+.content {
+	max-width: 90%;
+	padding: 25px 35px;
+	border-radius: 5px;
+	background: var(--white);
+	box-shadow: var(--shadow);
+	border-left: 5px solid var(--dark-blue);
+	flex-direction: column;
+}
+h1 {
+	text-align: center;
+	padding: 25px 35px;
+	border-radius: 5px;
+	background: var(--white);
+	font-size: 40px;
+	font-weight: 400;
+}
