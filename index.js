@@ -17328,7 +17328,7 @@ app.listen(PORT, async () => {
 	console.log("Express server listening on port ", PORT);
 });
 
-app.get("/entities", (req, res) => {
+app.get("/", (req, res) => {
 	res.render("index");
 });
 app.get("/entities/all", (req, res) => {
